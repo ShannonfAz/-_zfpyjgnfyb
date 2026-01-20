@@ -54,7 +54,8 @@
 
 | 引脚号(逐飞给的原理图封装) | 丝印 | 芯片引脚 | GPIO复用 | 主功能复用 | 第一复用 | 第二复用 | 引脚号(逐飞给的原理图封装) | 丝印 | 芯片引脚 | GPIO复用 | 主功能复用 | 第一复用 | 第二复用 | 备注 |
 | :----------------------: | :-: | :------: | :-----: | :--------: | :----- | :-------: | :----------------------: | :-: | :------: | :-----: | :--------: | :-----: | :-------: | :-: |
-|105|P64|SPI2_CLK|
+|107|P66|SPI2_MOSI|GPIO66|spi2_mosi|pwm[2]|uart1_rts|108|P67|SPI2_CS|GPIO67|GPIO67|pwm[3]|uart1_cts|-|
+|105|P64|SPI2_CLK|GPIO64|spi2_clk| pwm[0]|uart0_dcd|106|P65|SPI2_MISO|GPIO65|spi2_miso|pwm[1]|uart0_ri|-|
 |103|P62|SPI1_MOSI|GPIO62|spi1_mosi|i2c_scl[1]|uart0_dsr|104|P63|SPI1_CS|GPIO63|spi1_cs|i2c_sda[1]|uart0_dtr|-|
 |101|P60|SPI1_CLK|GPIO60|spi1_clk|i2c_scl[0]|uart0_rts|102|P61|SPI1_MISO|GPIO61|spi1_miso|i2c_sda[0]|uart0_cts|-|
 |99|P26|LCD_D22|GPIO26|lcd_dat_r[6]|-|liowrn|100|P27|LCD_D23|GPIO27|lcd_dat_r[7]|-|liordn|-|
