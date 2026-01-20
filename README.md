@@ -65,11 +65,11 @@
 |91|P18|LCD_D14|GPIO18|lcd_dat_g[6]|-|lioa[17]|92|P19|LCD_D15|GPIO19|lcd_dat_g[7]|-|lioa[18]|-|
 |89|P16|LCD_D12|GPIO16|lcd_dat_g[4]|-|lioa[15]|90|P17|LCD_D13|GPIO17|lcd_dat_g[5]|-|lioa[16]|-|
 |87|P14|LCD_D10|GPIO14|lcd_dat_g[2]|-|lioa[13]|88|P15|LCD_D11|GPIO15|lcd_dat_g[3]|-|lioa[14]|-|
-|85|P12|LCD_D8|GPIO12|lcd_dat_g[0]|-|lioa[11]|86|P13|LCD_D9|GPIO13|lcd_dat_g[1]|-|lioa[12]|-|
-|83|P10|LCD_D6|GPIO10|lcd_dat_b[6]|-|lioa[9]|84|P11|LCD_D7|GPIO11|lcd_dat_b[7]|-|lioa[10]|-|
-|81|P08|LCD_D4|GPIO08|lcd_dat_b[4]|-|lioa[7]|82|P09|LCD_D5|GPIO09|lcd_dat_b[5]|-|lioa[8]|-|
-|79|P06|LCD_D2|GPIO06|lcd_dat_b[2]|-|lioa[5]|80|P07|LCD_D3|GPIO07|lcd_dat_b[3]|-|lioa[6]|-|
-|77|P04|LCD_D0|GPIO04|lcd_dat_b[0]|-|lioa[3]|78|P05|LCD_D1|GPIO05|lcd_dat_b[1]|-|lioa[4]|-|
+|85|P12|LCD_D8|GPIO12|lcd_dat_g[0]|-|lioa[11]|86|P13|LCD_D9|GPIO13|lcd_dat_g[1]|-|lioa[12]|说人话就是：别动LCD_D[0:7]|
+|83|P10|LCD_D6|GPIO10|lcd_dat_b[6]|-|lioa[9]|84|P11|LCD_D7|GPIO11|lcd_dat_b[7]|-|lioa[10]|LCD_D6:EMMC引脚类型选择输入,0:3.3V-IO 1:1.8V-IO LCD_D7:保留|
+|81|P08|LCD_D4|GPIO08|lcd_dat_b[4]|-|lioa[7]|82|P09|LCD_D5|GPIO09|lcd_dat_b[5]|-|lioa[8]|LCD_D4:SDIO1模式选择输入,0:SDIO 1:EMMC LCD_D5 : USB参考时钟选择输入,0:内部时钟 1:外部晶振|
+|79|P06|LCD_D2|GPIO06|lcd_dat_b[2]|-|lioa[5]|80|P07|LCD_D3|GPIO07|lcd_dat_b[3]|-|lioa[6]|LCD_D[2:1]:PLL时钟配置输入,00:硬件低频 01:硬件高频 10:软件配置 11:BYPASS LCD_D3:SDIO0模式选择输入,0:SDIO 1:EMMC|
+|77|P04|LCD_D0|GPIO04|lcd_dat_b[0]|-|lioa[3]|78|P05|LCD_D1|GPIO05|lcd_dat_b[1]|-|lioa[4]|LCD_D0:启动选择输入,0:SPI0启动 1:SDIO0启动|
 |75|P02|LCD_HSYNC|GPIO02|lcd_hsync|-|lioa[1]|76|P03|LCD_EN|GPIO03|lcd_en|-|lioa[2]|-|
 |73|P00|LCD_CLK|GPIO00|lcd_clk|-|-|74|P01|LCD_VSYNC|GPIO01|lcd_vsync|-|lioa[0]|-|
 |71|P79|I2S_DI|GPIO79|i2s_datai|gtim_etr|spi1_cs[2]|72|P80|I2S_DO|GPIO80|i2s_datao|tim1_breakin|spi1_cs[3]|-|
