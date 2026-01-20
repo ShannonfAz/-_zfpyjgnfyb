@@ -30,3 +30,22 @@
 |36|P49|I2C0_SDA|GPIO49|i2c_sda[0]|gmac1_tx_ctl|lio_data[9]|35|P48|I2C0_SCL|GPIO48|i2c_scl[0]|gmac1_rx[3]|lio_data[8]|-|
 |38|P51|I2C1_SDA|GPIO51|i2c_sda[1]|gmac1_tx[1]|lio_data[11]|37|P50|I2C1_SCL|GPIO50|i2c_scl[1]|gmac1_tx[0]|lio_data[10]|-|
 |40|P53|I2C2_SDA|GPIO53|i2c_sda[2]|gmac1_tx[3]|lio_data[13]|39|P52|I2C2_SCL|GPIO52|i2c_scl[2]|gmac1_tx[2]|lio_data[12]|-|
+
+- 底下，从左到右看
+
+| 引脚号(逐飞给的原理图封装) | 丝印 | 芯片引脚 | GPIO复用 | 主功能复用 | 第一复用 | 第二复用 | 引脚号(逐飞给的原理图封装) | 丝印 | 芯片引脚 | GPIO复用 | 主功能复用 | 第一复用 | 第二复用 | 备注 |
+| :----------------------: | :-: | :------: | :-----: | :--------: | :-----: | :-------: | :----------------------: | :-: | :------: | :-----: | :--------: | :-----: | :-------: | :-: |
+|42|P55|I2C3_SDA|GPIO55|i2c_sda[3]|gmac1_mdio|lio_data[15]|41|P54|I2C3_SCL|GPIO54|i2c3_scl[3]|gmac1_mdck|lio_data[14]|-|
+|44|P41|UART0_TX|GPIO41|uart0_tx|gmac0_ptp_pps|lio_data[1]|43|P40|UART0_RX|GPIO40|uart0_rx|gmac0_ptp_trig|lio_data[0]|-|
+|46|P43|UART1_TX|GPIO43|uart1_tx|gmac1_ptp_pps|lio_data[3]|45|P42|UART1_RX|GPIO42|uart1_rx|gmac1_ptp_trig|lio_data[2]|-|
+|48|P45|UART2_RX|GPIO45|uart2_rx|gmac1_rx[0]|lio_data[5]|47|P44|UART2_TX|GPIO44|uart2_tx|gmac1_rx_ctl|lio_data[4]|注意这里开始和上面是反过来的|
+|50|P47|UART3_RX|GPIO47|uart3_rx|gmac1_rx[2]|lio_data[7]|49|P46|UART3_TX|GPIO46|uart3_tx|gmac1_rx[1]|lio_data[6]|UART3为蓝牙串口|
+|52|P69|CAN0_TX|GPIO69|can_tx[0]|spi0_cs[2]|uart1_dtr|51|P68|CAN0_RX|GPIO68|can_rx[0]|spi0_cs[1]|uart1_dsr|-|
+|54|P71|CAN1_TX|GPIO71|can_tx[1]|-|uart1_ri|53|P70|CAN1_RX|GPIO70|can_rx[1]|spi0_cs[3]|uart1_dcd|P71为wifi使能脚，别动。|
+|56|P73|CAN2_TX|GPIO73|can_tx[2]|sdio1_d[5]|gmac0_crs|55|P72|CAN2_RX|GPIO72|can_rx[2]|sdio1_d[4]|gmac0_col|-|
+|58|P75|CAN3_TX|GPIO75|can_tx[3]|sdio1_d[7]|gmac1_crs|57|P74|CAN3_RX|GPIO74|can_rx[3]|sdio1_d[6]|gmac1_col|-|
+|60|P82|TIM1_CH2|GPIO82|tim1_ch2|spi3_clk| i2c_scl[2]|59|P81|TIM1_CH1|GPIO81|tim1_ch1|-|-|-|
+|62|P84|TIM1_CH1N|GPIO84|tim1_ch1n|spi3_mosi|i2c_scl[3]|61|P83|TIM1_CH3|GPIO83|tim1_ch3|spi3_miso|i2c_sda[2]|-|
+|64|P86|TIM1_CH3N|GPIO86|tim1_ch3n|sdio1_d[4]|pwm[0]|63|P85|TIM1_CH2N|GPIO85|tim1_ch2n|spi3_cs|i2c_sda[3]|-|
+|66|P88|TIM2_CH2|GPIO88|tim2_ch2|sdio1_d[6]|pwm[2]|65|P87|TIM2_CH1|GPIO87|tim2_ch1|sdio1_d[5]|pwm[1]|-|
+|68|P76|I2S_MCLK|GPIO76|i2s_mclk|tim1_ch4|-|67|P75|CAN3_TX|GPIO75|can_tx[3]|sdio1_d[7]|gmac1_crs|-|
