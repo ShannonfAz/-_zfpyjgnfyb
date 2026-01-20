@@ -20,3 +20,13 @@
 | 16                       | A7  | ADC_IN7  | -       | -          | -       | -         | 15                       | A6  | ADC_IN6  | -       | -          | -       | -         | - |
 | 18                       | P28 |GMAC0_RX_CTL| GPIO28|gmac0_rx_ctl| -       | tim1_ch1  | 17                       | G0RC|GMAC0_RXCK| -       | -          | -       | -         |逐飞派并不使用GMAC0/GMAC1，而走的WIFI模块接UART3，所以部分GMAC引脚被复用出去|
 | 20                       | P30 | GMAC0_RX1| GPIO30  |gmac0_rx[1] | -       | tim1_ch3  | 19                       | P29 | GMAC0_RX0| GPIO29  |gmac0_rx[0] | -       | tim1_ch2  | - |
+| 22                       | P32 | GMAC0_RX3| GPIO32  |gmac0_rx[3] | -       | tim1_ch2n | 21                       | P31 | GMAC0_RX2| GPIO31  |gmac0_rx[2] | -       | tim1_ch1n | - |
+| 24                       |G0TCO|GMAC0_TXCK_O| -     | -          | -       | -         | 23                       |G0TCI|GMAC0_TXCK_I| -     | -          | -       | -         | 我正在思考：为什么逐飞会把这堆用不了的引脚引出来 |
+| 26                       | P34 | GMAC0_TX0| GPIO34  |gmac0_tx[0] | -       | tim2_ch1  | 25                       | P33 |GMAC0_TX_CTL| GPIO33|gmac0_tx_ctl| -       | tim1_ch3n | - |
+| 28                       | P36 | GMAC0_TX2| GPIO36  |gmac0_tx[2] |can_rx[0]| tim2_ch3  | 27                       | P35 | GMAC0_TX1| GPIO35  |gmac0_tx[1] | -       | tim2_ch2  | - |
+|30|P38|GMAC0_MDCK|GPIO38|gmac0_mdck|can_rx[1]|-|29|P37|GMAC0_TX3|GPIO37|gmac0_tx[3]|can_tx[0]|-|-|
+|32|G1RC|GMAC1_RXCK|-|-|-|-|31|P39|GMAC0_MDIO|GPIO39|gmac0_mdio|can_tx[1]|-|-|
+|34|G1TCO|GMAX1_TXCK_O|-|-|-|-|33|G1TCI|GMAX1_TXCK_I|-|-|-|-|-|
+|36|P49|I2C0_SDA|GPIO49|i2c_sda[0]|gmac1_tx_ctl|lio_data[9]|35|P48|I2C0_SCL|GPIO48|i2c_scl[0]|gmac1_rx[3]|lio_data[8]|-|
+|38|P51|I2C1_SDA|GPIO51|i2c_sda[1]|gmac1_tx[1]|lio_data[11]|37|P50|I2C1_SCL|GPIO50|i2c_scl[1]|gmac1_tx[0]|lio_data[10]|-|
+|40|P53|I2C2_SDA|GPIO53|i2c_sda[2]|gmac1_tx[3]|lio_data[13]|39|P52|I2C2_SCL|GPIO52|i2c_scl[2]|gmac1_tx[2]|lio_data[12]|-|
