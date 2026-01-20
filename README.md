@@ -49,3 +49,27 @@
 |64|P86|TIM1_CH3N|GPIO86|tim1_ch3n|sdio1_d[4]|pwm[0]|63|P85|TIM1_CH2N|GPIO85|tim1_ch2n|spi3_cs|i2c_sda[3]|-|
 |66|P88|TIM2_CH2|GPIO88|tim2_ch2|sdio1_d[6]|pwm[2]|65|P87|TIM2_CH1|GPIO87|tim2_ch1|sdio1_d[5]|pwm[1]|-|
 |68|P76|I2S_MCLK|GPIO76|i2s_mclk|tim1_ch4|-|67|P75|CAN3_TX|GPIO75|can_tx[3]|sdio1_d[7]|gmac1_crs|-|
+
+- 右边(表格顺序是从上到下的)
+
+| 引脚号(逐飞给的原理图封装) | 丝印 | 芯片引脚 | GPIO复用 | 主功能复用 | 第一复用 | 第二复用 | 引脚号(逐飞给的原理图封装) | 丝印 | 芯片引脚 | GPIO复用 | 主功能复用 | 第一复用 | 第二复用 | 备注 |
+| :----------------------: | :-: | :------: | :-----: | :--------: | :----- | :-------: | :----------------------: | :-: | :------: | :-----: | :--------: | :-----: | :-------: | :-: |
+|105|P64|SPI2_CLK|
+|103|P62|SPI1_MOSI|GPIO62|spi1_mosi|i2c_scl[1]|uart0_dsr|104|P63|SPI1_CS|GPIO63|spi1_cs|i2c_sda[1]|uart0_dtr|-|
+|101|P60|SPI1_CLK|GPIO60|spi1_clk|i2c_scl[0]|uart0_rts|102|P61|SPI1_MISO|GPIO61|spi1_miso|i2c_sda[0]|uart0_cts|-|
+|99|P26|LCD_D22|GPIO26|lcd_dat_r[6]|-|liowrn|100|P27|LCD_D23|GPIO27|lcd_dat_r[7]|-|liordn|-|
+|97|P24|LCD_D20|GPIO24|lcd_dat_r[4]|-|liocsn[0]|98|P25|LCD_D21|GPIO25|lcd_dat_r[5]|-|liocsn[1]|-|
+|95|P22|LCD_D18|GPIO22|lcd_dat_r[2]|-|lioa[21]|96|P23|LCD_D19|GPIO23|lcd_dat_r[3]|-|lioa[22]|-|
+|93|P20|LCD_D16|GPIO20|lcd_dat_r[0]|-|lioa[19]|94|P21|LCD_D17|GPIO21|lcd_dat_r[1]|-|lioa[20]|-|
+|91|P18|LCD_D14|GPIO18|lcd_dat_g[6]|-|lioa[17]|92|P19|LCD_D15|GPIO19|lcd_dat_g[7]|-|lioa[18]|-|
+|89|P16|LCD_D12|GPIO16|lcd_dat_g[4]|-|lioa[15]|90|P17|LCD_D13|GPIO17|lcd_dat_g[5]|-|lioa[16]|-|
+|87|P14|LCD_D10|GPIO14|lcd_dat_g[2]|-|lioa[13]|88|P15|LCD_D11|GPIO15|lcd_dat_g[3]|-|lioa[14]|-|
+|85|P12|LCD_D8|GPIO12|lcd_dat_g[0]|-|lioa[11]|86|P13|LCD_D9|GPIO13|lcd_dat_g[1]|-|lioa[12]|-|
+|83|P10|LCD_D6|GPIO10|lcd_dat_b[6]|-|lioa[9]|84|P11|LCD_D7|GPIO11|lcd_dat_b[7]|-|lioa[10]|-|
+|81|P08|LCD_D4|GPIO08|lcd_dat_b[4]|-|lioa[7]|82|P09|LCD_D5|GPIO09|lcd_dat_b[5]|-|lioa[8]|-|
+|79|P06|LCD_D2|GPIO06|lcd_dat_b[2]|-|lioa[5]|80|P07|LCD_D3|GPIO07|lcd_dat_b[3]|-|lioa[6]|-|
+|77|P04|LCD_D0|GPIO04|lcd_dat_b[0]|-|lioa[3]|78|P05|LCD_D1|GPIO05|lcd_dat_b[1]|-|lioa[4]|-|
+|75|P02|LCD_HSYNC|GPIO02|lcd_hsync|-|lioa[1]|76|P03|LCD_EN|GPIO03|lcd_en|-|lioa[2]|-|
+|73|P00|LCD_CLK|GPIO00|lcd_clk|-|-|74|P01|LCD_VSYNC|GPIO01|lcd_vsync|-|lioa[0]|-|
+|71|P79|I2S_DI|GPIO79|i2s_datai|gtim_etr|spi1_cs[2]|72|P80|I2S_DO|GPIO80|i2s_datao|tim1_breakin|spi1_cs[3]|-|
+|69|P77|I2S_BCLK|GPIO77|i2s_bclk|tim2_ch4|-|70|P78|I2S_LR|GPIO78|i2s_lr|atim_etr|spi1_cs[1]|-|
